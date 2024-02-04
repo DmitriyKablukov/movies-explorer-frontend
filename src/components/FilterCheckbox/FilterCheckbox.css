@@ -1,0 +1,75 @@
+.filter-checkbox {
+  padding: 27px 30px 27px 29px;
+  max-width: 168px;
+  width: 100%;
+}
+
+.filter-checkbox__label .filter-checkbox__input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.filter-checkbox__label {
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  width: 36px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.filter-checkbox__switch {
+  position: absolute;
+  background-color: #343434;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 36px;
+  border-radius: 20px;
+}
+
+.filter-checkbox__switch:before {
+  position: absolute;
+  content: '';
+  background-color: white;
+  border: 1px solid #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 16px;
+  width: 16px;
+  bottom: 1px;
+  left: 1px;
+  border-radius: 50%;
+}
+
+.filter-checkbox__switch:after {
+  position: absolute;
+  content: 'Короткометражки';
+  left: 50px;
+  top: 0;
+}
+
+.filter-checkbox__input:checked + .filter-checkbox__switch:before {
+  background-color: #2be080;
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+
+@media screen and (max-width: 550px) {
+  .filter-checkbox {
+    padding: 45px auto 44px auto;
+  }
+  .filter-checkbox__label {
+    font-size: 11px;
+    line-height: 18px;
+  }
+}

@@ -1,0 +1,162 @@
+.movie-card {
+  max-width: 270px;
+}
+
+.movie-card__trailer-link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
+}
+
+.movie-card__image {
+  width: 270px;
+  height: 151px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.movie-card__image:hover {
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+
+.movie-card__bottom-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 65px;
+  height: 100%;
+}
+
+.movie-card__container {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 24px;
+}
+
+.movie-card__name {
+  color: #fff;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0;
+  max-width: 226px;
+}
+
+.movie-card__like-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #313131;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: none;
+  padding: 0;
+  outline: none;
+  background-image: url(../../images/like-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.movie-card__like-button:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.movie-card__like-button_active {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #313131;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: none;
+  padding: 0;
+  outline: none;
+  background-image: url(../../images/like-icon-active.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.movie-card__like-button_active:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.movie-card__delete-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #313131;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: none;
+  padding: 0;
+  outline: none;
+  display: none;
+  background-image: url(../../images/delete-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.movie-card:hover .movie-card__delete-button,
+.movie-card:focus .movie-card__delete-button {
+  display: block;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+  cursor: pointer;
+}
+
+.movie-card__time {
+  margin: 13px 0 0 0;
+  padding-top: 5px;
+  color: #8b8b8b;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-top: 1px solid #424242;
+}
+
+@media screen and (max-width: 1000px) {
+  .movie-card {
+    max-width: 339px;
+  }
+  .movie-card__image {
+    width: 339px;
+    height: 190px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .movie-card {
+    max-width: 300px;
+  }
+  .movie-card__image {
+    width: 300px;
+    height: 168px;
+  }
+  .movie-card__name {
+    font-size: 12px;
+    line-height: 15px;
+    height: 24px;
+  }
+  .movie-card__time {
+    margin-top: 29px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}
