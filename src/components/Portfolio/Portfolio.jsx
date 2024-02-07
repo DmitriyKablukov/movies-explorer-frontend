@@ -5,7 +5,8 @@ export default function Portfolio() {
   return (
     <section className='portfolio'>
       <h2 className='portfolio__title'>Портфолио</h2>
-        <div className='portfolio__link-container'>
+      <ul className='portfolio__links-container'>
+        <li className='portfolio__link-container'>
           <a
             href='https://github.com/DmitriyKablukov/how-to-learn'
             className='portfolio__link'
@@ -19,9 +20,9 @@ export default function Portfolio() {
               alt='Ссылка на портфолио'
             />
           </a>
-        </div>
-        <div className='portfolio__link-container'>
-        <a
+        </li>
+        <li className='portfolio__link-container'>
+          <a
             href='https://github.com/DmitriyKablukov/russian-travel'
             className='portfolio__link'
             target='_blank'
@@ -34,9 +35,9 @@ export default function Portfolio() {
               alt='Ссылка на портфолио'
             />
           </a>
-        </div>
-        <div className='portfolio__link-container'>
-        <a
+        </li>
+        <li className='portfolio__link-container'>
+          <a
             href='https://github.com/DmitriyKablukov/react-mesto-api-full-gha'
             className='portfolio__link'
             target='_blank'
@@ -49,7 +50,8 @@ export default function Portfolio() {
               alt='Ссылка на портфолио'
             />
           </a>
-        </div>
+        </li>
+      </ul>
     </section>
   );
 }

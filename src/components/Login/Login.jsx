@@ -6,9 +6,9 @@ export default function Login() {
   return (
     <section className='login'>
       <Link to='/' className='login__logo'>
-          <img src={logo} alt='Логотип Movies Explorer' />
-        </Link>
-      <h2 className='login__title'>Рады видеть!</h2>
+        <img src={logo} alt='Логотип Movies Explorer' />
+      </Link>
+      <h1 className='login__title'>Рады видеть!</h1>
       <form className='login__form'>
         <div className='login__container'>
           <p className='login__input-text'>E-mail</p>
@@ -16,8 +16,8 @@ export default function Login() {
             className='login__input'
             id='email'
             name='email'
-            placeholder='Введите e-mail'
             required
+            placeholder='Введите e-mail'
           />
         </div>
         <div className='login__container'>
@@ -26,8 +26,10 @@ export default function Login() {
             className='login__input'
             id='password'
             name='password'
-            placeholder='Введите пароль'
             required
+            minLength='6'
+            maxLength='30'
+            placeholder='Введите пароль'
           />
         </div>
         <button

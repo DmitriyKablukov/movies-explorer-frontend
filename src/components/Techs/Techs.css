@@ -1,6 +1,5 @@
 .technologies {
   background: #272727;
-  max-height: 625px;
   padding: 100px 70px 100px 70px;
 }
 
@@ -83,8 +82,17 @@
 
 @media screen and (max-width: 768px) {
   .technologies {
-    max-height: 567px;
     padding: 90px 50px 90px 50px;
+  }
+  .technologies__container {
+    padding: 80px 0 83px 0;
+  }
+  .technologies__text-subtitle {
+    margin-top: 22px;
+    max-width: 460px;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.04em;
   }
   .technologies__link {
     width: 84px;
@@ -97,7 +105,6 @@
 
 @media screen and (max-width: 425px) {
   .technologies {
-    max-height: 651px;
     padding: 70px 18px 70px 18px;
   }
   .technologies__title {

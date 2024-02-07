@@ -7,7 +7,9 @@ export default function Main() {
       <h1 className='promo__title'>
         Учебный проект студента факультета Веб-разработки.
       </h1>
-      <img className='promo__logo' src={logo} alt='Логотип' />
+      <div className='promo__logo-container'>
+        <img className='promo__logo' src={logo} alt='Логотип' />
+      </div>
     </section>
   );
 }

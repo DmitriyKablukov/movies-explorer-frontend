@@ -23,6 +23,12 @@
   width: 100%;
 }
 
+.navigation__links-burger {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .navigation__link {
   text-decoration: none;
   padding: 0;

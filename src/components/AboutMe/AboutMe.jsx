@@ -8,7 +8,7 @@ export default function AboutMe() {
       <div className='about__container'>
         <div className='about__student-container'>
           <div>
-            <h4 className='about__student-name'>Дмитрий</h4>
+            <h3 className='about__student-name'>Дмитрий</h3>
             <p className='about__student-job'>Фронтенд-разработчик, 28 лет</p>
             <p className='about__student-description'>
               Я живу в Москве. У меня есть жена и кот. Закончил факультет

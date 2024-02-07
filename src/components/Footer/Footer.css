@@ -1,6 +1,5 @@
 .footer {
   background: #202020;
-  max-height: 172px;
   padding: 79px 70px 20px 70px;
 }
 
@@ -49,9 +48,14 @@
   margin-right: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 79px 30px 20px 30px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .footer {
-    max-height: 253px;
     padding: 79px 10px 20px 10px;
   }
   .footer__title {

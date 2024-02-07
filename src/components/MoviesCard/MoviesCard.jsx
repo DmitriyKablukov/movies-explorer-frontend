@@ -19,13 +19,12 @@ export default function MoviesCard({ movie, isSaved }) {
       </a>
       <div className='movie-card__bottom-bar'>
         <div className='movie-card__container'>
-          <h4 className='movie-card__name'>{movie.name}</h4>
+          <h2 className='movie-card__name'>{movie.name}</h2>
           <button
             className={isSavedButton}
             type='button'
             aria-label='Кнопка сохранить'
-          >
-          </button>
+          ></button>
         </div>
         <p className='movie-card__time'>{movie.time}</p>
       </div>

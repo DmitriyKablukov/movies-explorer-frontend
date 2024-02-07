@@ -5,7 +5,7 @@ export default function Techs() {
     <section className='technologies'>
       <h2 className='technologies__title'>Технологии</h2>
       <div className='technologies__container'>
-        <h4 className='technologies__text-title'>7 технологий</h4>
+        <h3 className='technologies__text-title'>7 технологий</h3>
         <p className='technologies__text-subtitle'>
           На курсе веб-разработки мы освоили технологии, которые применили в
           дипломном проекте.

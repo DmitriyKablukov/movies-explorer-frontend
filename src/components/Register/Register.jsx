@@ -8,7 +8,7 @@ export default function Register() {
       <Link to='/' className='register__logo'>
         <img src={logo} alt='Логотип Movies Explorer' />
       </Link>
-      <h2 className='register__title'>Добро пожаловать!</h2>
+      <h1 className='register__title'>Добро пожаловать!</h1>
       <form className='register__form'>
         <div className='register__container'>
           <p className='register__input-text'>Имя</p>
@@ -16,6 +16,9 @@ export default function Register() {
             className='register__input'
             id='name'
             name='name'
+            required
+            minLength="2"
+            maxLength="30"
             placeholder='Введите имя'
           />
         </div>
@@ -25,6 +28,7 @@ export default function Register() {
             className='register__input'
             id='email'
             name='email'
+            required
             placeholder='Введите e-mail'
           />
         </div>
@@ -34,6 +38,9 @@ export default function Register() {
             className='register__input'
             id='password'
             name='password'
+            required
+            minLength="6"
+            maxLength="30"
             placeholder='Введите пароль'
           />
         </div>

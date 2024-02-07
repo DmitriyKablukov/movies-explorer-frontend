@@ -2,15 +2,13 @@
   margin: 0;
   padding: 0;
   background: #073042;
-  min-height: 560px;
-  position: relative;
   display: flex;
+  flex-direction: column;
   overflow: hidden;
 }
 
 .promo__title {
   margin: 50px 0 0 70px;
-  padding-bottom: 102px;
   color: #fff;
   font-size: 40px;
   font-style: normal;
@@ -18,42 +16,37 @@
   line-height: 52px;
   letter-spacing: -1.6px;
   max-width: 626px;
-  max-height: 104px;
+}
+
+.promo__logo-container {
+  display: flex;
+  justify-content: end;
 }
 
 .promo__logo {
-  position: absolute;
-  right: 70px;
-  bottom: 60px;
+  height: 244px;
+  width: 722px;
+  margin: 102px 70px 60px 0;
 }
 
 @media screen and (max-width: 768px) {
   .promo {
-    min-height: 844px;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
   }
   .promo__title {
-    margin: 300px auto 140px auto;
+    margin: 300px auto 0 auto;
     text-align: center;
-    padding: 0;
     max-width: 680px;
-    max-height: 104px;
   }
   .promo__logo {
-    position: static;
     width: 680px;
     height: 230px;
-    margin-bottom: 70px;
+    margin: 140px auto 70px auto;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .promo {
-    min-height: 630px;
-  }
   .promo__title {
     margin: 183px 10px 60px 10px;
     font-weight: 400;
@@ -61,6 +54,9 @@
     line-height: 39px;
     letter-spacing: -0.04em;
     max-width: 300px;
-    max-height: 117px;
+  }
+  .promo__logo {
+    margin-top: 0;
+    margin-bottom: 40px;
   }
 }

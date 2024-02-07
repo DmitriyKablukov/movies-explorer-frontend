@@ -1,6 +1,5 @@
 .about {
   background: #202020;
-  max-height: 654px;
   padding: 110px 70px 100px 70px;
 }
 
@@ -55,7 +54,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-  max-height: 600px;
 }
 
 .about__student-link {
@@ -74,16 +72,14 @@
 }
 
 .about__photo {
-  max-width: 270px;
-  max-height: 327px;
+  width: 270px;
+  height: 327px;
   border-radius: 10px;
   object-fit: cover;
-  margin-left: 49px;
 }
 
 @media screen and (max-width: 768px) {
   .about {
-    max-height: 604px;
     padding: 90px 50px 90px 50px;
   }
   .about__student-name {
@@ -101,14 +97,14 @@
     line-height: 18px;
   }
   .about__photo {
-    max-width: 225px;
-    max-height: 307px;
+    width: 225px;
+    height: 307px;
+    margin-left: 49px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .about {
-    max-height: 904px;
     padding: 70px 14px 70px 14px;
   }
   .about__title {
@@ -137,8 +133,8 @@
     line-height: 16px;
   }
   .about__photo {
-    max-width: 292px;
-    max-height: 352px;
+    width: 292px;
+    height: 352px;
     margin: 0;
     order: 1;
   }

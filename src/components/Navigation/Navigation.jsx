@@ -37,7 +37,7 @@ export default function Navigation({
             }`}
             onClick={handleClickOverlay}
           >
-            <div className='navigation__links'>
+            <li className='navigation__links'>
               {isBurgerOpen && (
                 <li className='navigation__item'>
                   <NavLink
@@ -76,7 +76,7 @@ export default function Navigation({
                   Сохранённые фильмы
                 </NavLink>
               </li>
-            </div>
+            </li>
             <li className='navigation__item'>
               <Link to='/profile' className='navigation__profile'>
                 <p className='navigation__profile-text'>Аккаунт</p>

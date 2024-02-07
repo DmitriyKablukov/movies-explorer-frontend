@@ -35,7 +35,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 24px;
 }
 
 .movie-card__name {
@@ -152,7 +151,6 @@
   .movie-card__name {
     font-size: 12px;
     line-height: 15px;
-    height: 24px;
   }
   .movie-card__time {
     margin-top: 29px;

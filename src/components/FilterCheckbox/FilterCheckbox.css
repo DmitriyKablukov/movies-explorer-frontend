@@ -1,5 +1,5 @@
 .filter-checkbox {
-  padding: 27px 30px 27px 29px;
+  padding: 26px 30px 26px 29px;
   max-width: 168px;
   width: 100%;
 }
@@ -64,9 +64,15 @@
   transform: translateX(16px);
 }
 
+@media screen and (max-width: 768px) {
+  .filter-checkbox {
+    padding: 26px 20px 26px 19px;
+  }
+}
+
 @media screen and (max-width: 550px) {
   .filter-checkbox {
-    padding: 45px auto 44px auto;
+    padding: 43px 0 44px 20px;
   }
   .filter-checkbox__label {
     font-size: 11px;

@@ -14,6 +14,12 @@ import Register from '../Register/Register';
 import NotFound from '../NotFound/NotFound';
 import Footer from '../Footer/Footer';
 
+import Promo from '../Promo/Promo';
+import AboutProject from '../AboutProject/AboutProject';
+import Techs from '../Techs/Techs';
+import AboutMe from '../AboutMe/AboutMe';
+import Portfolio from '../Portfolio/Portfolio';
+
 function App() {
   const [currentUser] = useState({
     name: 'Дмитрий',
@@ -39,17 +45,72 @@ function App() {
           isBurgerOpen={isBurgerOpen}
         />
         <Routes>
-          <Route exact path='/' element={<Main />} />
-          <Route exact path='/movies' element={<Movies isLoading={isLoading} isSaved={true} />} />
+          <Route
+            exact
+            path='/'
+            element={
+              <Main>
+                <Promo />
+                <AboutProject />
+                <Techs />
+                <AboutMe />
+                <Portfolio />
+              </Main>
+            }
+          />
+          <Route
+            exact
+            path='/movies'
+            element={
+              <Main>
+                <Movies isLoading={isLoading} isSaved={true} />
+              </Main>
+            }
+          />
           <Route
             exact
             path='/saved-movies'
-            element={<SavedMovies isLoading={isLoading} isSaved={false} />}
+            element={
+              <Main>
+                <SavedMovies isLoading={isLoading} isSaved={false} />
+              </Main>
+            }
           />
-          <Route exact path='/profile' element={<Profile />} />
-          <Route exact path='/signin' element={<Login />} />
-          <Route exact path='/signup' element={<Register />} />
-          <Route path='/*' element={<NotFound />} />
+          <Route
+            exact
+            path='/profile'
+            element={
+              <Main>
+                <Profile />
+              </Main>
+            }
+          />
+          <Route
+            exact
+            path='/signin'
+            element={
+              <Main>
+                <Login />
+              </Main>
+            }
+          />
+          <Route
+            exact
+            path='/signup'
+            element={
+              <Main>
+                <Register />
+              </Main>
+            }
+          />
+          <Route
+            path='/*'
+            element={
+              <Main>
+                <NotFound />
+              </Main>
+            }
+          />
         </Routes>
         <Footer />
       </div>

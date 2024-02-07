@@ -26,9 +26,12 @@
   line-height: normal;
 }
 
-.not-found__link {
-  text-decoration: none;
+.not-found__button {
   margin: 0 0 60px 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .not-found__link-text {
@@ -47,9 +50,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .not-found {
-    height: 1024px;
-  }
   .not-found__title {
     margin-top: 408px;
   }
@@ -61,8 +61,18 @@
 @media screen and (max-width: 425px) {
   .not-found__title {
     margin-top: 329px;
+    font-size: 80px;
+    line-height: 97px;
+  }
+  .not-found__subtitle {
+    font-size: 12px;
+    line-height: 15px;
   }
   .not-found__link {
     margin: 284px 0 30px 0;
+  }
+  .not-found__link-text {
+    font-size: 12px;
+    line-height: 15px;
   }
 }

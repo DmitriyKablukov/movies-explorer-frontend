@@ -1,6 +1,5 @@
 .about-project {
   background: #202020;
-  max-height: 608px;
   padding: 110px 70px 110px 70px;
 }
 
@@ -26,7 +25,7 @@
   max-width: 550px;
 }
 
-.about-project__text-card_title {
+.about-project__text-card-title {
   margin: 0 0 26px 0;
   color: #fff;
   font-size: 20px;
@@ -36,7 +35,7 @@
   letter-spacing: -0.8px;
 }
 
-.about-project__text-card_subtitle {
+.about-project__text-card-subtitle {
   margin: 0;
   color: #fff;
   font-size: 14px;
@@ -53,7 +52,7 @@
   width: 228px;
 }
 
-.about-project__backend-timline {
+.about-project__backend-timeline {
   height: 36px;
   margin: 0;
   background: #3ddc84;
@@ -72,7 +71,7 @@
   width: 912px;
 }
 
-.about-project__frontend-timline {
+.about-project__frontend-timeline {
   height: 36px;
   margin: 0;
   background: #303030;
@@ -98,14 +97,22 @@
 
 @media screen and (max-width: 768px) {
   .about-project {
-    max-height: 585px;
     padding: 90px 50px 90px 50px;
+  }
+  .about-project__text-card-title {
+    margin-bottom: 22px;
+  }
+  .about-project__text-card-subtitle {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .about-project__text-container {
+    padding-bottom: 93px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .about-project {
-    max-height: 641px;
     padding: 70px 18px 69px 18px;
   }
   .about-project__title {
@@ -119,13 +126,13 @@
     padding: 60px 0 60px 0;
     gap: 56px;
   }
-  .about-project__text-card_title {
+  .about-project__text-card-title {
     margin-bottom: 16px;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: -0.04em;
   }
-  .about-project__text-card_subtitle {
+  .about-project__text-card-subtitle {
     font-size: 11px;
     line-height: 16px;
   }
@@ -137,12 +144,12 @@
     min-width: 184px;
     width: 80%;
   }
-  .about-project__backend-timline {
+  .about-project__backend-timeline {
     height: 35px;
     font-size: 11px;
     line-height: 13px;
   }
-  .about-project__frontend-timline {
+  .about-project__frontend-timeline {
     height: 35px;
     font-size: 11px;
     line-height: 13px;

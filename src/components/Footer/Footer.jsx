@@ -9,9 +9,9 @@ export default function Footer() {
   if (footer.includes(location.pathname))
     return (
       <footer className='footer'>
-        <h4 className='footer__title'>
+        <h2 className='footer__title'>
           Учебный проект Яндекс.Практикум х BeatFilm.
-        </h4>
+        </h2>
         <div className='footer__bottom-bar'>
           <p className='footer__copyright'>© 2024. Kablukov Dmitrii</p>
           <div className='footer__links-bar'>
