@@ -1,0 +1,148 @@
+.about {
+  background: #202020;
+  padding: 110px 70px 100px 70px;
+}
+
+.about__title {
+  margin: 0;
+  padding-bottom: 23px;
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.88px;
+  border-bottom: 1px solid #dadada;
+}
+
+.about__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 66px 0 0 0;
+}
+
+.about__student-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about__student-name {
+  margin: 0;
+  color: #fff;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58px;
+  letter-spacing: -2px;
+}
+
+.about__student-job {
+  margin: 18px 0 26px 0;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.about__student-description {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.about__student-link {
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.about__student-link:hover {
+  opacity: 0.7;
+  transition: opacity 0.5s;
+}
+
+.about__photo {
+  width: 270px;
+  height: 327px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 90px 50px 90px 50px;
+  }
+  .about__student-name {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+  }
+  .about__student-job {
+    margin: 16px 0 20px 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .about__student-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .about__photo {
+    width: 225px;
+    height: 307px;
+    margin-left: 49px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about {
+    padding: 70px 14px 70px 14px;
+  }
+  .about__title {
+    padding-bottom: 28px;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.04em;
+  }
+  .about__container {
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__student-name {
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.04em;
+  }
+  .about__student-job {
+    margin: 20px 0 20px 0;
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .about__student-description {
+    font-size: 11px;
+    line-height: 16px;
+  }
+  .about__photo {
+    width: 292px;
+    height: 352px;
+    margin: 0;
+    order: 1;
+  }
+  .about__student-container {
+    margin-top: 40px;
+    order: 2;
+  }
+  .about__student-link {
+    margin-top: 40px;
+  }
+}
