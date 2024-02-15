@@ -8,18 +8,18 @@ export default function MoviesCardList({ movies, onClickLike, isRequestInfo }) {
 
   function countShowMovies() {
     const width = window.innerWidth;
-    if (width >= 1280) {
-      setCountMovies(16);
-      setAddMovies(4);
-    } else if (width >= 990) {
-      setCountMovies(12);
-      setAddMovies(3);
-    } else if (width >= 660) {
-      setCountMovies(8);
-      setAddMovies(2);
-    } else {
+    if (width <= 715) {
       setCountMovies(5);
       setAddMovies(2);
+    } else if (width <= 900) {
+      setCountMovies(8);
+      setAddMovies(2);
+    } else if (width <= 1145) {
+      setCountMovies(12);
+      setAddMovies(3);
+    } else {
+      setCountMovies(16);
+      setAddMovies(4);
     }
   }
 
