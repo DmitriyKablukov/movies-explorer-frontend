@@ -1,25 +1,41 @@
 import './MoviesCardList.css';
 import MoviesCard from '../MoviesCard/MoviesCard';
 import { useState, useEffect } from 'react';
+import {
+  DEBOUNCE_TIME,
+  SCREEN_DESKTOP,
+  SCREEN_TABLET,
+  SCREEN_MOBILE,
+  COUNT_MOVIES_DESKTOP_WIDESCREEN,
+  COUNT_MOVIES_DESKTOP,
+  COUNT_MOVIES_TABLET,
+  COUNT_MOVIES_MOBILE,
+  ADD_MOVIES_DESKTOP_WIDESCREEN,
+  ADD_MOVIES_DESKTOP,
+  ADD_MOVIES_TABLET,
+  ADD_MOVIES_MOBILE,
+} from '../../utils/constants';
 
 export default function MoviesCardList({ movies, onClickLike, isRequestInfo }) {
-  const [countMovies, setCountMovies] = useState(16);
-  const [addMovies, setAddMovies] = useState(4);
+  const [countMovies, setCountMovies] = useState(
+    COUNT_MOVIES_DESKTOP_WIDESCREEN
+  );
+  const [addMovies, setAddMovies] = useState(ADD_MOVIES_DESKTOP_WIDESCREEN);
 
   function countShowMovies() {
     const width = window.innerWidth;
-    if (width <= 715) {
-      setCountMovies(5);
-      setAddMovies(2);
-    } else if (width <= 900) {
-      setCountMovies(8);
-      setAddMovies(2);
-    } else if (width <= 1145) {
-      setCountMovies(12);
-      setAddMovies(3);
+    if (width <= SCREEN_MOBILE) {
+      setCountMovies(COUNT_MOVIES_MOBILE);
+      setAddMovies(ADD_MOVIES_MOBILE);
+    } else if (width <= SCREEN_TABLET) {
+      setCountMovies(COUNT_MOVIES_TABLET);
+      setAddMovies(ADD_MOVIES_TABLET);
+    } else if (width <= SCREEN_DESKTOP) {
+      setCountMovies(COUNT_MOVIES_DESKTOP);
+      setAddMovies(ADD_MOVIES_DESKTOP);
     } else {
-      setCountMovies(16);
-      setAddMovies(4);
+      setCountMovies(COUNT_MOVIES_DESKTOP_WIDESCREEN);
+      setAddMovies(ADD_MOVIES_DESKTOP_WIDESCREEN);
     }
   }
 
@@ -30,7 +46,7 @@ export default function MoviesCardList({ movies, onClickLike, isRequestInfo }) {
   useEffect(() => {
     setTimeout(() => {
       window.addEventListener('resize', countShowMovies);
-    }, 3600);
+    }, DEBOUNCE_TIME);
   });
 
   function handleClickMoreMovies() {

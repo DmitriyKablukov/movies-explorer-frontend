@@ -19,6 +19,7 @@ import Portfolio from '../Portfolio/Portfolio';
 import ProtectedRoute from '../ProtectedRoute/ProtectedRoute';
 import { api } from '../../utils/MainApi';
 import { moviesApi } from '../../utils/MoviesApi';
+import { SHORT_FILM_DURATION } from '../../utils/constants';
 
 export default function App() {
   const navigate = useNavigate();
@@ -191,7 +192,7 @@ export default function App() {
             const onlyShorts = filterMoviesParams.shorts ?? false;
             if (onlyShorts) {
               filteredMovies = movies.filter((movie) => {
-                return movie.duration <= 40;
+                return movie.duration <= SHORT_FILM_DURATION;
               });
               if (movieName) {
                 filteredMovies = filteredMovies.filter((movie) =>
@@ -293,7 +294,7 @@ export default function App() {
             const onlyShorts = filters.shorts ?? false;
             if (onlyShorts) {
               filteredSavedMovies = res.filter((movie) => {
-                return movie.duration <= 40;
+                return movie.duration <= SHORT_FILM_DURATION;
               });
               if (movieName) {
                 filteredSavedMovies = filteredSavedMovies.filter((movie) =>
