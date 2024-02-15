@@ -91,13 +91,10 @@
   background-color: #0f4157;
 }
 
-.navigation__not-auth {
-  justify-content: end;
-}
-
 .navigation__list-not-auth {
   display: flex;
   align-items: center;
+  justify-content: end;
 }
 
 .navigation__link-register {

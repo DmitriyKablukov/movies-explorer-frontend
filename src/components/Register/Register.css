@@ -21,11 +21,28 @@
 }
 
 .register__container {
-  margin: 0 0 24px;
+  margin: 0 0 26px;
+  position: relative;
 }
 
 .register__container:last-of-type {
   margin: 0 0 152px;
+}
+
+.auth__error {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  display: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ee3465;
+}
+
+.auth__error_active {
+  display: block;
 }
 
 .register__input-text {
@@ -60,6 +77,30 @@
   border-bottom: 1px solid #4285f4;
 }
 
+.register__request {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.2;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  display: none;
+  bottom: 170px;
+}
+
+.register__request_success {
+  color: #2be080;
+}
+
+.register__request_fail {
+  color: #ee3465;
+}
+
+.register__request_active {
+  display: block;
+}
+
 .register__submit-button {
   color: #fff;
   font-size: 14px;
@@ -79,6 +120,11 @@
   opacity: 0.8;
   transition: opacity 0.5s;
   cursor: pointer;
+}
+
+.register__submit-button:disabled,
+.register__submit-button[disabled] {
+  background: #666666;
 }
 
 .register__link-login {

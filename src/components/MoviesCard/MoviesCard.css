@@ -32,6 +32,7 @@
 
 .movie-card__container {
   margin: 0;
+  height: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;

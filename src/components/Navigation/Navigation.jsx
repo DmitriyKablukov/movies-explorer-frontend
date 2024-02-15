@@ -5,8 +5,8 @@ import BurgerMenu from '../BurgerMenu/BurgerMenu';
 
 export default function Navigation({
   isAuth,
-  handleBurgerClick,
   isBurgerOpen,
+  handleBurgerClick,
 }) {
   const location = useLocation();
 
@@ -37,7 +37,7 @@ export default function Navigation({
             }`}
             onClick={handleClickOverlay}
           >
-            <li className='navigation__links'>
+            <div className='navigation__links'>
               {isBurgerOpen && (
                 <li className='navigation__item'>
                   <NavLink
@@ -76,8 +76,8 @@ export default function Navigation({
                   Сохранённые фильмы
                 </NavLink>
               </li>
-            </li>
-            <li className='navigation__item'>
+            </div>
+            <div className='navigation__item'>
               <Link to='/profile' className='navigation__profile'>
                 <p className='navigation__profile-text'>Аккаунт</p>
                 <div
@@ -89,26 +89,21 @@ export default function Navigation({
                   <img src={profileIcon} alt='Иконка профиля' />
                 </div>
               </Link>
-            </li>
+            </div>
           </ul>
         </nav>
       ) : (
-        <dev className='navigation navigation__not-auth'>
-          <nav className='navigation__list-not-auth'>
-            <Link
-              className='navigation__link navigation__link-register'
-              to='/signup'
-            >
-              Регистрация
-            </Link>
-            <Link
-              className='navigation__link navigation__link-auth'
-              to='/signin'
-            >
-              Войти
-            </Link>
-          </nav>
-        </dev>
+        <nav className='navigation navigation__list-not-auth'>
+          <Link
+            className='navigation__link navigation__link-register'
+            to='/signup'
+          >
+            Регистрация
+          </Link>
+          <Link className='navigation__link navigation__link-auth' to='/signin'>
+            Войти
+          </Link>
+        </nav>
       )}
     </>
   );

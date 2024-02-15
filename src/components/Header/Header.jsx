@@ -3,15 +3,10 @@ import logo from '../../images/header-logo.svg';
 import Navigation from '../Navigation/Navigation';
 import { Link, useLocation } from 'react-router-dom';
 
-export default function Header({ handleBurgerClick, isBurgerOpen }) {
-
+export default function Header({ isAuth, handleBurgerClick, isBurgerOpen }) {
+  const location = useLocation();
   const header = ['/', '/profile', '/movies', '/saved-movies'];
 
-  const location = useLocation();
-
-  // ПЕРЕКЛЮЧАТЕЛЬ ДЛЯ СМЕНЫ СОСТОЯНИЯ АВТОРИЗАЦИИ
-  const isAuth = true;
-  
   if (header.includes(location.pathname))
     return (
       <header
