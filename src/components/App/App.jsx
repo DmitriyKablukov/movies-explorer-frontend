@@ -112,7 +112,6 @@ export default function App() {
     localStorage.removeItem('filteredMoviesList');
     setFilteredMoviesList([]);
     setCurrentUser({});
-    navigate('/');
   }
 
   function handleEditProfile(values) {
