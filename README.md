@@ -12,3 +12,5 @@
 Frontend *https://movies-exp.nomoredomainsmonster.ru/*
 
 Backend *https://api.movies-exp.nomoredomainsmonster.ru/*
+
+Pull requests *https://github.com/DmitriyKablukov/movies-explorer-frontend/pull/2*
