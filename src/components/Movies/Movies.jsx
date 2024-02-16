@@ -20,7 +20,7 @@ export default function Movies({
     useFormWithValidation();
 
   useEffect(() => {
-    setIsLoading(true);
+    setIsLoading(false);
     setIsRequestInfo({
       isOpen: false,
       success: true,
