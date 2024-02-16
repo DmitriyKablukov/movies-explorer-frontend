@@ -123,7 +123,7 @@ export default function Profile({
         >
           Редактировать
         </button>
-        <Link to='/signin'>
+        <Link to='/'>
           <button
             className='profile__exit-button'
             type='submit'
