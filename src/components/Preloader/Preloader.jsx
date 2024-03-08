@@ -1,11 +1,13 @@
 import './Preloader.css';
 
-export default function Preloader() {
+const Preloader = () => {
   return (
-    <div className='preloader'>
+    <div className='preloader section__container'>
       <div className='preloader__container'>
         <span className='preloader__round'></span>
       </div>
     </div>
   );
-}
+};
+
+export default Preloader;

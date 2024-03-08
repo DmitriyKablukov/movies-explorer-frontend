@@ -6,8 +6,11 @@
 Верстка реализована по макету dark-1
 
 ## Запуск проекта
-`npm run start` — запускает проект
+`npm start` — запускает проект
 
 ## Ссылки
 Frontend *https://movies-exp.nomoredomainsmonster.ru/*
+
 Backend *https://api.movies-exp.nomoredomainsmonster.ru/*
+
+Pull requests *https://github.com/DmitriyKablukov/movies-explorer-frontend/pull/2*

@@ -32,6 +32,7 @@
 
 .movie-card__container {
   margin: 0;
+  height: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -130,7 +131,7 @@
   border-top: 1px solid #424242;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 900px) {
   .movie-card {
     max-width: 339px;
   }
@@ -140,7 +141,7 @@
   }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 715px) {
   .movie-card {
     max-width: 300px;
   }

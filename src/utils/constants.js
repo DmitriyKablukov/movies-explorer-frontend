@@ -1,0 +1,15 @@
+export const EMAIL_REGEX = '^\\S+@\\S+\\.\\S+$';
+export const USER_NAME_REGEX = '^[а-яА-ЯёЁa-zA-Z\\s\\-]+$';
+export const SHORT_FILM_DURATION = 40;
+export const DEBOUNCE_TIME = 3600;
+export const SCREEN_DESKTOP = 1145;
+export const SCREEN_TABLET = 900;
+export const SCREEN_MOBILE = 715;
+export const COUNT_MOVIES_DESKTOP_WIDESCREEN = 16;
+export const COUNT_MOVIES_DESKTOP = 12;
+export const COUNT_MOVIES_TABLET = 8;
+export const COUNT_MOVIES_MOBILE = 5;
+export const ADD_MOVIES_DESKTOP_WIDESCREEN = 4;
+export const ADD_MOVIES_DESKTOP = 3;
+export const ADD_MOVIES_TABLET = 2;
+export const ADD_MOVIES_MOBILE = 2;

@@ -1,7 +1,7 @@
 import './Promo.css';
 import logo from '../../images/promo-logo.svg';
 
-export default function Main() {
+export default function Promo() {
   return (
     <section className='promo'>
       <h1 className='promo__title'>

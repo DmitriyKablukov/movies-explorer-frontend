@@ -2,10 +2,9 @@ import './Footer.css';
 import { useLocation } from 'react-router-dom';
 
 export default function Footer() {
+  const location = useLocation();
   const footer = ['/movies', '/saved-movies', '/'];
 
-  const location = useLocation();
-  
   if (footer.includes(location.pathname))
     return (
       <footer className='footer'>
